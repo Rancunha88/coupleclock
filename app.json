@@ -1,17 +1,22 @@
 {
   "expo": {
-    "name": "love-app",
+    "name": "CoupleClock",
     "slug": "love-app",
     "version": "1.0.0",
+    "scheme": "coupleclock",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ran88.loveapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#5c0016",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -20,6 +25,19 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fcb2e0e1-32ef-4de4-aee1-dfe4450590aa"
+      }
+    },
+    "owner": "ran88",
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-splash-screen",
+      "@react-native-community/datetimepicker",
+      "expo-image"
+    ]
   }
 }
