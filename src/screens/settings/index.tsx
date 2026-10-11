@@ -44,6 +44,7 @@ export function SettingsScreen() {
     <ScrollView
       style={styles.container}
       contentInsetAdjustmentBehavior="automatic"
+      showsVerticalScrollIndicator={false}
       contentContainerStyle={styles.content}
     >
       <View style={styles.header}>

@@ -22,6 +22,7 @@ export function HomeScreen() {
     <ScrollView
       style={styles.container}
       contentInsetAdjustmentBehavior="automatic"
+      showsVerticalScrollIndicator={false}
       contentContainerStyle={styles.content}
     >
       <CoupleHero photoSource={getPhotoSource(profile.photoUri)} badgeLabel={badgeLabel} />
