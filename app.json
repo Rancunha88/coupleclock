@@ -37,7 +37,46 @@
       "expo-font",
       "expo-splash-screen",
       "@react-native-community/datetimepicker",
-      "expo-image"
+      "expo-image",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CoupleClock uses your photo library so you can choose a picture of you and your partner. For example, the photo you pick is shown at the top of the home screen next to your relationship counter. The photo stays on your device and is never uploaded.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-widgets",
+        {
+          "widgets": [
+            {
+              "name": "Countdown",
+              "displayName": "Birthday Countdown · Dark",
+              "description": "Days until your next relationship birthday.",
+              "ios": { "supportedFamilies": ["systemSmall"], "contentMarginsDisabled": true }
+            },
+            {
+              "name": "CountdownLight",
+              "displayName": "Birthday Countdown · Light",
+              "description": "Days until your next relationship birthday.",
+              "ios": { "supportedFamilies": ["systemSmall"], "contentMarginsDisabled": true }
+            },
+            {
+              "name": "TimeTogether",
+              "displayName": "Time Together · Dark",
+              "description": "How long you've been together in years, months and days.",
+              "ios": { "supportedFamilies": ["systemSmall"], "contentMarginsDisabled": true }
+            },
+            {
+              "name": "TimeTogetherLight",
+              "displayName": "Time Together · Light",
+              "description": "How long you've been together in years, months and days.",
+              "ios": { "supportedFamilies": ["systemSmall"], "contentMarginsDisabled": true }
+            }
+          ]
+        }
+      ]
     ]
   }
 }
