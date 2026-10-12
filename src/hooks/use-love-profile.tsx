@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createContext, use, useCallback, useEffect, useMemo, useState, type ReactNode } from 'react';
 
 import { defaultProfile, type LoveProfile } from '@/data/mockData';
-import { syncDaysTogetherWidget } from '@/widgets/sync-days-together';
+import { syncWidgets } from '@/widgets/sync-widgets';
 
 const STORAGE_KEY = 'love-counter/profile';
 
@@ -39,7 +39,7 @@ export function LoveProfileProvider({ children }: LoveProfileProviderProps) {
   }, []);
 
   useEffect(() => {
-    if (!isLoading) syncDaysTogetherWidget(profile);
+    if (!isLoading) syncWidgets(profile);
   }, [profile, isLoading]);
 
   const updateProfile = useCallback(async (patch: Partial<LoveProfile>) => {

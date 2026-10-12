@@ -51,14 +51,28 @@
         {
           "widgets": [
             {
-              "name": "DaysTogether",
-              "displayName": "Days Together",
-              "description": "Your days-together count at a glance.",
-              "ios": {
-                "supportedFamilies": [
-                  "systemSmall"
-                ]
-              }
+              "name": "Countdown",
+              "displayName": "Birthday Countdown · Dark",
+              "description": "Days until your next relationship birthday.",
+              "ios": { "supportedFamilies": ["systemSmall"], "contentMarginsDisabled": true }
+            },
+            {
+              "name": "CountdownLight",
+              "displayName": "Birthday Countdown · Light",
+              "description": "Days until your next relationship birthday.",
+              "ios": { "supportedFamilies": ["systemSmall"], "contentMarginsDisabled": true }
+            },
+            {
+              "name": "TimeTogether",
+              "displayName": "Time Together · Dark",
+              "description": "How long you've been together in years, months and days.",
+              "ios": { "supportedFamilies": ["systemSmall"], "contentMarginsDisabled": true }
+            },
+            {
+              "name": "TimeTogetherLight",
+              "displayName": "Time Together · Light",
+              "description": "How long you've been together in years, months and days.",
+              "ios": { "supportedFamilies": ["systemSmall"], "contentMarginsDisabled": true }
             }
           ]
         }
